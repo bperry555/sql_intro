@@ -1,1 +1,2 @@
 *.lsxl filter=lfs diff=lfs merge=lfs -text
+*.lsxm filter=lfs diff=lfs merge=lfs -text

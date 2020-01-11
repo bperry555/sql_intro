@@ -38,17 +38,14 @@ with open(csvpath, newline='') as csvfile:
 
 avechange = (avechange / (months - 1))
 
-file = open("bankpyout.txt", "w")
-
-file.write('Financial Analysis/\n')
-file.write('-' * 80) 
-file.write(f'\nTotal Months: {months}\n')
-file.write(f'Total: ${pltotal}\n')
-file.write("Average Change: $" + "{0:.2f}\n".format(avechange,2))
-file.write(f'Greatest Increase in Profits: {imonth} (${gincrease})\n')
-file.write(f'Greatest Decrease in Profits: {dmonth} (${gdecrease})\n')
-
-file.close()
+with open('bankpyout.txt', 'w', newline='') as output:
+    output.write('Financial Analysis\n')
+    output.write(('-' * 80) + '\n')
+    output.write(f'Total Months: {months}\n')
+    output.write(f'Total: ${pltotal}\n')
+    output.write("Average Change: $" + "{0:.2f}\n".format(avechange,  2))
+    output.write(f'Greatest Increase in Profits: {imonth} (${gincrease})\n')
+    output.write(f'Greatest Decrease in Profits: {dmonth} (${gdecrease})\n')
 
 print('Financial Analysis')
 print("-" * 80)

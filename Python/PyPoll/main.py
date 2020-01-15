@@ -34,7 +34,7 @@ with open('pypollout.txt', 'w', newline='') as output:
     output.write('-' * 80 + '\n')
     output.write(f'Total Votes: {totalvote}\n')
     output.write('-' * 80 + '\n')
-    #find how many canidates were found in the file and print them all out with proper stats and formatting.
+    #find how many canidates were found in the file and print them all out with formatting.
     for name in range(len(canidate)):
         output.write(f'{canidate[name]}: {format(vote_count[name] / totalvote, ".3%")} ({vote_count[name]})\n')
     output.write('-' * 80 + '\n')
@@ -47,6 +47,7 @@ print('-' * 80)
 print(f'Total Votes: {totalvote}')
 print('-' * 80)
 
+#find how many canidates were found in the file and print them all out with formatting.
 for name in range(len(canidate)):
     print(f'{canidate[name]}: {format(vote_count[name] / totalvote, ".3%")} ({vote_count[name]})')
 

@@ -47,7 +47,7 @@ with open('bankpyout.txt', 'w', newline='') as output:
     output.write(('-' * 80) + '\n')
     output.write(f'Total Months: {months}\n')
     output.write(f'Total: ${pltotal}\n')
-    output.write(f"Average Change: $  {format(avechange, '.2%')}\'n")
+    output.write(f"Average Change: $  {format(avechange, '.2%')}\n")
     output.write(f'Greatest Increase in Profits: {imonth} (${gincrease})\n')
     output.write(f'Greatest Decrease in Profits: {dmonth} (${gdecrease})\n')
 # prints all the output to the console.

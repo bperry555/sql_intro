@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
-    <meta charsest=="UTF-8">
-    <title>Brian's Data Visualization Page</title>
+  <meta charsest=="UTF-8">
+  <title>Brian's Data Visualization Page</title>
     <!-- Bootstrap stylesheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#">Brian's Data Viz</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse"                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"    aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-    <div class="container">
-        <div class="row">
-            <!--Nav Bar full-->
-            
-
-            </div>
-        </div>
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">B's Data Viz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="max_temp.html">Max Tempurature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudines.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <!--Page Layout-->
+
+  <div class="container-fluid">
+    <div class="row my-row">
+      <div class="col-sm-4 .col-lg-10">
+        <h1 class="card-title">Title of Landing Page</h1>
+        <hr>
+        <img src="resources\assets\images\Fig1.png" class="card-img" alt="figure 1" width="200" height="125">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque at facere ab possimus ut magnam magni maxime fugit dicta quibusdam, doloremque est nihil sunt ex, facilis atque. Porro, enim incidunt.</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, animi molestiae quae debitis sapiente amet iusto pariatur atque nisi impedit distinctio, iste illum nostrum natus. Recusandae, repudiandae hic. Rem, est.
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, animi molestiae quae debitis sapiente amet iusto pariatur atque nisi impedit distinctio, iste illum nostrum natus. Recusandae, repudiandae hic. Rem, est.
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, animi molestiae quae debitis sapiente amet iusto pariatur atque nisi impedit distinctio, iste illum nostrum natus. Recusandae, repudiandae hic. Rem, est.
+      </div>
+      <div class="col-sm-+ .col-lg-3">
+        <h2>Visualizations</h2>
+        <hr>
+          <img src="resources\assets\images\Fig1.png" alt="figure 1" width="200" height="125">
+          <img src="resources\assets\images\Fig2.png" alt="figure 2" width="200" height="125">
+          <img src="resources\assets\images\Fig3.png" alt="figure 3" width="200" height="125">
+          <img src="resources\assets\images\Fig4.png" alt="figure 4" width="200" height="125">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>

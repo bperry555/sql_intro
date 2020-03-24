@@ -15,8 +15,8 @@
 
 <body>
   <!--Nav Bar-->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <a class="navbar-brand" href="index.html">B's Data Viz</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand rounded" href="index.html">B's Data Viz</a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,20 +25,20 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle rounded-pill" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="max_temp.html">Max Tempurature</a>
-            <a class="dropdown-item active" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
             <a class="dropdown-item" href="cloudines.html">Cloudiness</a>
             <a class="dropdown-item" href="windspeed.html">Windspeed</a>
           </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item rounded-pill">
           <a class="nav-link" href="comparisons.html">Comparison</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item rounded-pill">
           <a class="nav-link" href="data.html">Data</a>
         </li>
       </ul>
@@ -58,17 +58,26 @@
       <hr>
       <div class="row my-row">
         <div class="col-lg-6 my-col3 pt-3">
-          <img src="resources\assets\images\Fig1.png" class="img-fluid" alt="figure 1"> 
-          <img src="resources\assets\images\Fig2.png" class="img-thumbnail active_pic" alt="figure 2"> 
+          <a href="max_temp.html"><img src="resources\assets\images\Fig1.png" class="img-fluid" alt="figure 1"></a> 
+          <a href="humidity.html"><img src="resources\assets\images\Fig2.png" class="img-thumbnail active_pic" alt="figure 2"></a> 
         </div>
         <div class="col-lg-6 my-col4 pt-3">
-          <img src="resources\assets\images\Fig3.png" class="img-fluid" alt="figure 3"> 
-          <img src="resources\assets\images\Fig4.png" class="img-fluid" alt="figure 4"> 
+          <a href="cloudines.html"><img src="resources\assets\images\Fig3.png" class="img-fluid" alt="figure 3"></a> 
+          <a href="windspeed.html"><img src="resources\assets\images\Fig4.png" class="img-fluid" alt="figure 4"></a> 
         </div>
       </div>
     </div>
   </div>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="row foot-row">
+        <div class="col copyright">
+          Brians Data Project 2020  <a href="https://bperry555.github.io"><img src="resources\assets\images\GitHub-Mark-32px.png"></a>
+          <a href="#"><img src="resources\assets\images\LI-In-Bug.png" alt="linked in profile, coming soon" height="35px" width="45px"></a>
+        </div>
+      </div>
+    </div> 
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

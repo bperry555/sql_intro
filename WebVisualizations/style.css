@@ -1,37 +1,15 @@
+/* General Page Styling */
 body {
     background-color:rgb(225, 225, 225);
+    margin-bottom: 60px;
+}
+html {
+    position: relative;
+    min-height: 100%;
 }
 .my-col {
     background-color: white;
-}
-.active_pic {
-    border-radius: 25px;
-    background-color: aquamarine;
-    
-}
-.foot-row {
-    border-top: aqua;
-}
-.foot-text {
-    font-size: 20px;
-    padding: 10px;
-    font-style: italic;
-    font-weight: lighter;
-    
-}
-.navbar-expand-lg {
-    padding: 0;
-    
-}
-.navbar-brand {
-    background-color: rgb(25, 185, 190);
-    color: white;
-    margin-left: 60px;
-    padding: 10px;
-    font-size: 25px;
-    font-family: Georgia, serif;
-    font-weight: bold;
-    
+    border-radius: 15px;
 }
 .text {
     background-color: white;
@@ -39,16 +17,81 @@ body {
     font-weight: bold;
     padding-left: 3rem;
 }
+/* Navbar Styling*/
+@media (max-width: 767.98px){
+.navbar-custom {
+    background-color: teal;
+    color: black
+    }
+}
+.navbar-custom {
+    padding: 5px;
+    border-bottom: 2px solid rgb(25, 185, 190);
+    background-color: white;
+}
+
+.navbar-brand {
+    background-color: rgb(25, 185, 190);
+    color: white;
+    margin-left: 60px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    font-weight: bold; 
+}
+a.navbar-brand:hover {
+    color: rgb(25, 185, 190);
+    background-color: white;
+    border-color: rgb(25, 185, 190);
+    border:2px solid rgb(25, 185, 190);;
+}
 a.nav-link {
     color: rgb(25,185,190);
     font-weight: bold;
+    margin-right: 20px;
 }
-.dropdown-item:hover {
+a.nav-link:hover {
+    background-color: rgb(25, 185, 190);
+    color: white;
+}
+a.dropdown-item:hover {
     color:white ;
     background-color: rgb(25, 185, 190);
 }
-.nav-link.active {
+a.dropdown-item:active {
     color: white;
     background-color: rgb(25, 185, 190);
 }
-
+.navbar-toggler {
+    background-color: rgb(25, 185, 190);
+    ;
+}
+/* Border On Selection */
+.active_pic {
+    border-radius: 25px;
+    background-color: rgb(25, 185, 190);
+}
+/* Footer Styling */
+.foot-text {
+    font-size: 20px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: lighter;  
+}
+.footer {   
+    position: absolute;   
+    bottom: 0;   
+    width: 100%;   
+    height: 80px;
+    line-height: 60px;
+    background-color: rgb(165, 165, 165);
+    color: #f8f9fa!important;
+    margin: 0px;
+    border-width: 2rem;
+    border-top:3px solid rgb(25, 185, 190)
+  }
+.copyright {
+    margin-top: 10px;
+    float: inline-start;  
+    text-align: center
+}
